@@ -1,0 +1,23 @@
+﻿<Window x:Class="MSSU_CIS310_MVC.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MSSU_CIS310_MVC"
+        mc:Ignorable="d"
+        Title="Oliver's Bible Browser - Main Menu" Height="250" Width="350">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Image Source="/img/manuscript.png" Grid.RowSpan="3" Stretch="Fill"/>
+        <Label Content="Oliver's Bible Browser" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Old English Text MT" FontSize="24"/>
+        <Button Content="Open Search Window" Grid.Row="1" Click="Keyword_Button_Click" FontFamily="Modern No. 20" FontSize="18" Margin="49,10"/>
+        <Button Content="Quit" Grid.Row="2" Click="Quit_Button_Click" FontFamily="Modern No. 20" FontSize="18" Margin="49,10"/>
+    </Grid>
+</Window>
